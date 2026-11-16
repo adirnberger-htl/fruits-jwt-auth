@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <title>Fruits</title>
+    <meta charset="utf-8">
+    <script type="module" src="logic/login.ts" defer></script>
+    <script type="module" src="logic/index.ts" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="flex-row" style="width: 100%;" id="head-container">
+    <h1 class="m-5">Fruits</h1>
+    <button id="login-button" class="login-button m-5">Login</button>
+    </div>
+    <div id="div-login" class="hidden loginForm">
+        <form id="login-form" class="login-form">
+            <div class="flex-column content-form">
+             <h3 class="m-5">Login</h3>
+            <input id="login-email" placeholder="Email" type="email" class="m-5"/>
+            <input id="login-password" placeholder="Password" type="password" class="m-5"/>
+            <input type="submit" value="Login" class="m-5 login-button"/>
+            </div>
+        </form>
+    </div>
+    <div class="flex-column m-5">
+        <h2>Aktueller Lagerbestand</h2>
+        <table id="fruits-table">
+            <tr>
+                <td>Name</td>
+                <td>Stück</td>
+                <td>Preis</td>
+                <td>Löschen</td>
+            </tr>
+        </table>
+    </div>
+    <div class="flex-column m-5 hidden" id="add-container">
+        <form class="flex-column" id="add-form">
+            <h3>Neue Früchte</h3>
+            <input id="name-fruit" type="text" placeholder="Frucht Name" class="m-5"/>
+            <input id="stock-fruit" type="number" placeholder="Stückzahl" class="m-5"/>
+            <input id="price-fruit" type="number" step="0.01" placeholder="Preis" class="m-5"/>
+            <input type="submit" value="Hinzufügen" class="m-5"/>
+        </form>
+    </div>
+</body>
+</html>

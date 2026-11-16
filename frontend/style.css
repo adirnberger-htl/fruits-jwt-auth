@@ -1,0 +1,83 @@
+.loginForm {
+    z-index: 99;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    background-color: burlywood;
+}
+.hidden {
+    display: none !important;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m-5 {
+    margin: 5px;
+}
+
+.flex-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.login-button {
+    border: none;
+    padding: 10px;
+    background-color: coral;
+    color: white;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+    border-radius: 5px;
+}
+.login-button:hover {
+    scale: 1.05;
+    transition: scale 0.5s ease-in-out;
+}
+
+.login-form {
+    width: fit-content;
+    border: 2px solid black;
+    border-radius: 4px;
+}
+.content-form {
+    background-color: white;
+}
+
+
+.logout-button {
+    border: none;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    scale: 1;
+    transition: scale 0.5s ease-in-out;
+    border-radius: 5px;
+}
+
+.logout-button:hover {
+    scale: 1.05;
+    transition: scale 0.5s ease-in-out;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid black;
+
+}
+
+td {
+    padding: 5px;
+    border: 1px solid black;
+}
